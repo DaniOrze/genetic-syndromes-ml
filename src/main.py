@@ -4,12 +4,16 @@ from dataProcessing import load_data, flatten_data, preprocess_data
 from dataVisualization import evaluate_tsne_parameters, visualize_data, visualize_tsne_results
 from classification import knn_classification
 from metricsAndEvaluation import generate_roc_auc_curves, summarize_metrics
+import argparse
 
 def main():
-    file_path = "data/mini_gm_public_v0.1.p"
+    parser = argparse.ArgumentParser(description="Process and visualize hierarchical data.")
+    parser.add_argument("file_path", type=str, help="Path to the pickle file containing the data.")
+    args = parser.parse_args()
+
+    file_path = args.file_path
 
     data = load_data(file_path)
-
     df = flatten_data(data)
     df = preprocess_data(df)
     

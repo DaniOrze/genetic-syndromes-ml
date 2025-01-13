@@ -52,9 +52,13 @@ The project leverages the following Python libraries:
     ```bash
    cd genetic-syndromes-ml
    ```
-2. Running the project:
+2. Run the project, providing the path to your data file:
     ```bash
-   python src/main.py
+   python src/main.py /path/to/your/datafile.p
+   ```
+Replace /path/to/your/datafile.p with the actual path to your .p data file. For example, if the file is in the Downloads folder on a Mac:
+```bash
+   python src/main.py /Users/your_username/Downloads/mini_gm_public_v0.1.p
    ```
 
 ## Output
