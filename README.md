@@ -38,7 +38,7 @@ The project leverages the following Python libraries:
 3. Create a virtual environment and activate it:
 
     ```bash
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate   # On Windows: venv\Scripts\activate
    ```
 4. Install the required dependencies:
